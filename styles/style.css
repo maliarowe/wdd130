@@ -1,54 +1,32 @@
-/* Nav Rule */
-nav {
-    /* CSS declarations for nav */
-  }
-  
-  /* Nav Anchor Rule */
-  nav a {
-    /* CSS declarations for nav anchor */
-  }
-  
-  /* Heading 1 Rule */
-  h1 {
-    /* CSS declarations for heading 1 */
-  }
-  
-  /* img Rule */
-  img {
-    /* CSS declarations for images */
-  }
-  
-  /* Main Rule */
-  main {
-    max-width: 840px;
-  }
-  
-  /* Aside Rule */
-  aside {
-    width: 20rem;
-    margin: 1rem;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    padding: 1rem;
-    background-color: #eee;
-    color: #333;
-    text-align: center;
-  }
-  
-  /* Aside Image Rule */
-  aside img {
-    width: 200px;
-    height: auto;
-  }
-  
-  /* Paragraph Rule */
-  p {
+* {
+    margin: 0;
     padding: 0;
+    box-sizing: border-box;
+  }
+
+  main img {
+    /* you most likely will have other declarations here */
+    float: right;
+  }
+
+
+  /* Class Selectors */
+  .box {
+    margin: 1rem;
+    border: 1px solid rgba(0,0,0,.1);
+    padding: 1rem;
+    background-color: #ddd;
+    color: #000;
   }
   
-  /* Footer Rule */
-  footer {
-    margin-top: 15px;
-    border-top: 1px solid #000;
+  aside {
+    width: 20em;
     text-align: center;
+  }
+
+  aside h2 {
+    position: absolute;
+    top: 47px;
+    left: 150px;
   }
   
