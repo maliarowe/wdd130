@@ -2,31 +2,28 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
+}
 
-  main img {
-    /* you most likely will have other declarations here */
+main img {
     float: right;
-  }
+}
 
-
-  /* Class Selectors */
-  .box {
+/* Class Selectors */
+.box {
     margin: 1rem;
     border: 1px solid rgba(0,0,0,.1);
     padding: 1rem;
     background-color: #ddd;
     color: #000;
-  }
-  
-  aside {
+}
+
+aside {
     width: 20em;
     text-align: center;
-  }
+}
 
-  aside h2 {
+aside h2 {
     position: absolute;
     top: 47px;
     left: 150px;
-  }
-  
+}
