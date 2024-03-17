@@ -1,0 +1,154 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300&family=Mochiy+Pop+P+One&display=swap');
+
+/* Define CSS variables */
+:root {
+  --primary-color: #81b29a;
+  --secondary-color: #f4f1de;
+  --accent-color1: #3d405b;
+  --accent-color2: #e07a5f;
+}
+
+/* General styles */
+body {
+  background-color: var(--secondary-color);
+  font-family: "Exo 2", "Didot Serif", "Serif";
+  margin: 0;
+  padding: 0;
+  color: var(--primary-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--primary-color);
+}
+
+p {
+  color: var(--secondary-color);
+  background-color: var(--accent-color1);
+}
+
+/* Header styles */
+header {
+    display: grid;
+    grid-template-columns: 150px auto;
+    background-color: #e07a5f;
+    color: #f4f1de;
+    opacity: .9;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
+nav a:hover {
+  background-color: var(--secondary-color);
+  color: var(--accent-color2);
+}
+
+/* Main styles */
+main {
+  padding: 20px;
+}
+
+.hero {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.hero h1,
+.hero article {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: var(--secondary-color);
+}
+
+.hero article {
+  background-color: rgba(61, 64, 91, 0.7);
+  padding: 20px;
+  max-width: 60%;
+}
+
+.hero article img {
+  float: right;
+}
+
+/* Footer styles */
+footer {
+  background-color: var(--accent-color2);
+  color: var(--secondary-color);
+  padding: 20px;
+  text-align: center;
+}
+
+footer a {
+  color: var(--secondary-color);
+}
+
+footer a:hover {
+  text-decoration: none;
+}
+
+footer .social img {
+  padding: 10px;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 900px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  nav {
+    margin-top: 10px;
+  }
+
+  .hero h1,
+  .hero article {
+    position: relative;
+    transform: none;
+    width: 100%;
+    max-width: none;
+    padding: 0;
+    margin: 20px auto;
+    text-align: center;
+  }
+
+  .hero article img {
+    float: none;
+  }
+
+  footer .social img {
+    display: block;
+    margin: 10px auto;
+  }
+}
+
+/* Additional styles to make images descend */
+section img {
+  display: block;
+  width: 100%;
+  max-width: 400px; /* Adjust the max-width as needed */
+  margin: 0 auto 20px; /* Add margin to bottom to create spacing between images */
+}
+
+.image {
+    text-align: center; /* Center the title */
+    margin-bottom: 20px; /* Add spacing between images */
+  }
+  
+  .image p {
+    margin: 0; /* Reset margin */
+  }
+
