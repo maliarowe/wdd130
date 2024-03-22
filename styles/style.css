@@ -4,35 +4,7 @@
     box-sizing: border-box;
 }
 
-main img,
-aside img {
-    max-width: 100%; /* Ensure images don't exceed the width of their containers */
-    height: auto; /* Maintain aspect ratio */
-}
-
-/* Class Selectors */
-.box {
-    margin: 1rem;
-    border: 1px solid rgba(0, 0, 0, .1);
-    padding: 1rem;
-    background-color: #ddd;
-    color: #000;
-}
-
-aside {
-    width: 20em;
-    text-align: center;
-    position: relative;
-}
-
-aside h2 {
-    position: absolute;
-    top: 47px;
-    left: 150px;
-}
-
-header,
-footer {
+header, .grid, footer {
     max-width: 840px;
     margin: 0 auto;
 }
@@ -57,20 +29,22 @@ nav a {
 .grid {
     display: grid;
     align-items: center;
+    grid-template-columns: 20rem 1fr; /* Define two columns: 20rem wide for aside, and 1fr (remaining space) for main */
+    gap: 1rem; /* Add gap between grid items */
 }
 
 main {
-    grid-column: 2/3;
     margin: 1rem;
 }
 
 aside {
     width: 20rem;
     position: relative;
-    grid-column: 1/2;
-    grid-row: 1/2;
 }
 
-h1 {
-    border-bottom: 1px solid black;
+/* Styling for images */
+img {
+    max-width: 100%; /* Ensure images don't exceed their container's width */
+    height: auto; /* Maintain aspect ratio */
 }
+
