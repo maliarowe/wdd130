@@ -1,0 +1,164 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300&family=Mochiy+Pop+P+One&display=swap');
+
+/* Define CSS variables */
+:root {
+  --primary-color: #81b29a;
+  --secondary-color: #f4f1de;
+  --accent-color1: #3d405b;
+  --accent-color2: #e07a5f;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body styles */
+  body {
+    font-family: 'Exo 2', sans-serif;
+    background-color: #f4f1de;
+    color: #3d405b;
+    line-height: 1.6;
+  }
+  
+  /* Header styles */
+  header {
+    background-color: #81b29a;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  header img {
+    width: 120px;
+    height: auto;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  /* Main styles */
+  main {
+    padding: 20px;
+  }
+  
+  section {
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  h2 {
+    color: #3d405b;
+    margin-bottom: 20px;
+  }
+  
+  .company-info {
+    margin-bottom: 30px;
+  }
+  
+  .company-info p {
+    margin-bottom: 10px;
+  }
+  
+  iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+    margin-bottom: 20px;
+  }
+  
+  .employee-profiles {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+  
+  .employee-profiles figure {
+    text-align: center;
+  }
+  
+  .employee-profiles img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .employee-profiles figcaption {
+    color: #555;
+  }
+  
+  /* Form styles */
+  form {
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  fieldset {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  legend {
+    font-weight: bold;
+    color: #3d405b;
+    margin-bottom: 10px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  button[type="submit"] {
+    background-color: #81b29a;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #3d405b;
+  }
+  
+  /* Footer styles */
+  footer {
+    background-color: #e07a5f;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  footer nav a {
+    margin: 0 5px;
+  }
+  
+  footer nav img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
