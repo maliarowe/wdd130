@@ -9,6 +9,37 @@
   --accent-color2: #e07a5f;
 }
 
+.hero {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.hero h1,
+.hero article {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: var(--secondary-color);
+}
+
+.hero article {
+  background-color: rgba(61, 64, 91, 0.7);
+  padding: 20px;
+  max-width: 60%;
+}
+
+.hero article img {
+  float: right;
+}
+
 /* General styles */
 body {
   background-color: var(--secondary-color);
@@ -16,7 +47,7 @@ body {
   margin: 0;
   padding: 0;
   color: var(--primary-color);
-  font-size: 16px; /* Adjust font size */
+  font-size: 16px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -47,7 +78,7 @@ header {
 h1 {
   font-size: 2rem;
   font-family: Acme, Arial, sans-serif;
-  margin: 0; /* Adjust margin */
+  margin: 0;
 }
 
 nav {
@@ -81,44 +112,13 @@ main {
   padding: 20px;
 }
 
-.hero {
-  position: relative;
-  overflow: hidden;
-}
-
-.hero img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.hero h1,
-.hero article {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: var(--secondary-color);
-}
-
-.hero article {
-  background-color: rgba(61, 64, 91, 0.7);
-  padding: 20px;
-  max-width: 60%;
-}
-
-.hero article img {
-  float: right;
-}
-
 /* Footer styles */
 footer {
   background-color: var(--accent-color2);
   color: var(--secondary-color);
   padding: 20px;
   text-align: center;
-  font-size: 14px; /* Adjust font size */
+  font-size: 14px;
 }
 
 footer a {
@@ -133,14 +133,9 @@ footer .social img {
   padding: 10px;
 }
 
-/* Additional styles to make images horizontal */
+/* Adventure Images - Horizontal Layout */
 section {
-  display: flex;
-  flex-direction: column; /* Set section elements to display vertically */
-}
-
-h2 {
-  text-align: center;
+  display: flex; /* Removed unnecessary flex-direction */
 }
 
 .image {
@@ -153,3 +148,5 @@ h2 {
   width: 150px; /* Adjust image size */
   height: auto;
 }
+
+
