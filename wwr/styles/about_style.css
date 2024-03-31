@@ -16,6 +16,7 @@ body {
   margin: 0;
   padding: 0;
   color: var(--primary-color);
+  font-size: 16px; /* Adjust font size */
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -29,21 +30,50 @@ p {
 
 /* Header styles */
 header {
-    display: grid;
-    grid-template-columns: 150px auto;
-    background-color: #e07a5f;
-    color: #f4f1de;
-    opacity: .9;
+  margin: 1rem auto;
+  display: grid;
+  grid-template-columns: 120px 1fr 2fr;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  max-width: 1000px;
 }
 
-nav a {
+.logo img {
+  margin: 0 0.25rem 0 1rem;
+  width: 64px;
+  height: auto;
+}
+
+h1 {
+  font-size: 2rem;
+  font-family: Acme, Arial, sans-serif;
+  margin: 0; /* Adjust margin */
+}
+
+nav {
+  text-align: right;
+}
+
+.navigation {
+  display: flex;
+  list-style: none;
+}
+
+.navigation li {
+  flex: 1 1 100%;
+}
+
+.navigation a {
+  display: block;
+  color: navy;
+  padding: 20px;
   text-decoration: none;
-  color: var(--secondary-color);
 }
 
-nav a:hover {
-  background-color: var(--secondary-color);
-  color: var(--accent-color2);
+.navigation a:hover {
+  color: tomato;
+  font-weight: 700;
+  text-decoration: underline;
 }
 
 /* Main styles */
@@ -88,6 +118,7 @@ footer {
   color: var(--secondary-color);
   padding: 20px;
   text-align: center;
+  font-size: 14px; /* Adjust font size */
 }
 
 footer a {
@@ -102,53 +133,23 @@ footer .social img {
   padding: 10px;
 }
 
-/* Responsive styles */
-@media screen and (max-width: 900px) {
-  header {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  nav {
-    margin-top: 10px;
-  }
-
-  .hero h1,
-  .hero article {
-    position: relative;
-    transform: none;
-    width: 100%;
-    max-width: none;
-    padding: 0;
-    margin: 20px auto;
-    text-align: center;
-  }
-
-  .hero article img {
-    float: none;
-  }
-
-  footer .social img {
-    display: block;
-    margin: 10px auto;
-  }
+/* Additional styles to make images horizontal */
+section {
+  display: flex;
+  flex-direction: column; /* Set section elements to display vertically */
 }
 
-/* Additional styles to make images descend */
-section img {
-  display: block;
-  width: 100%;
-  max-width: 400px; /* Adjust the max-width as needed */
-  margin: 0 auto 20px; /* Add margin to bottom to create spacing between images */
+h2 {
+  text-align: center;
 }
 
 .image {
-    text-align: center; /* Center the title */
-    margin-bottom: 20px; /* Add spacing between images */
-  }
-  
-  .image p {
-    margin: 0; /* Reset margin */
-  }
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
 
+.image img {
+  width: 150px; /* Adjust image size */
+  height: auto;
+}
