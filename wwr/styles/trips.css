@@ -1,0 +1,97 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300&family=Mochiy+Pop+P+One&display=swap');
+
+/* Define CSS variables */
+:root {
+  --primary-color: #81b29a;
+  --secondary-color: #f4f1de;
+  --accent-color1: #3d405b;
+  --accent-color2: #e07a5f;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  font-family: 'Exo 2', sans-serif;
+  background-color: var(--secondary-color);
+  color: var(--accent-color1);
+  line-height: 1.6;
+}
+
+/* Header styles */
+header {
+  background-color: var(--primary-color);
+  padding: 20px;
+  text-align: center;
+}
+
+header img {
+  width: 120px;
+  height: auto;
+}
+
+nav a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+/* Main styles */ 
+  h1 {
+    text-align: center;
+     /* This is optional if you want to ensure text alignment */
+  }
+
+h1, h2, h3 {
+  color: var(--accent-color1);
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+.section-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-text {
+  max-width: 600px;
+  margin-bottom: 20px;
+}
+
+.section-image img {
+  max-width: 600px;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* Footer styles */
+footer {
+  background-color: var(--accent-color2);
+  color: var(--secondary-color);
+  text-align: center;
+  padding: 20px;
+}
+
+footer nav a {
+  margin: 0 5px;
+}
+
+footer nav img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
